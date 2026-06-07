@@ -1,9 +1,10 @@
 package com.luis.petsrcv;
 
 public class PetModel {
+
     private final int imageResId;
     private final String name;
-    private final int rating;
+    private int rating;
 
     public PetModel(int imageResId, String name, int rating) {
         this.imageResId = imageResId;
@@ -22,4 +23,9 @@ public class PetModel {
     public int getRating() {
         return rating;
     }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
 }
